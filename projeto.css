@@ -1,0 +1,36 @@
+.linha > .navbar{
+    border-bottom: 1px solid rgba(120, 120, 120, 0.581);
+}
+.navbar > .navbar-brand, .collapse{
+    justify-content: end;
+    margin-right: 0px;
+}
+.barracentro{
+    align-items: center;
+    margin-top: auto;
+    margin: 10%;
+    .d-flex > .text-primary, .text-danger, .text-warning, .text-success{
+        font-size: 100px;
+    }
+}
+h5{
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+}
+.barracentro > .navbar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-inline{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-inline > .form-control, .btn, .btn-outline-success{
+    border-radius: 25px;
+    size: 100px;
+    border: 2px solid rgba(120, 120, 120, 0.581);
+    margin: 2px;
+}
