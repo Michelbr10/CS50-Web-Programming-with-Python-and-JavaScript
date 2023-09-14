@@ -1,0 +1,33 @@
+Criar uma ambiente virtual
+    django-admin startproject <nome do projeto>
+
+
+Será criado um projeto com o nome especificado,
+dentro dele há alguns arquivos:
+
+manage.py - é usado para executar comandos no projeto django.
+settings.py - contém configurações importantes do nosso aplicativo
+    django, vem carregado com algumas configurações padrão, mas podemos altera-los.
+urls.py - urls é como um índice das rotas que o aplicativo web pode visitar.
+
+Rodar servidor da aplicação
+    python manage.py runserver
+
+Criar um django app:
+    python manage.py startapp <nome do app>
+    Um projeto pode contém vários apps.
+
+Após a criação do app, precisamos adiciona-lo ao nosso projeto,
+abra o arquivos settings.py na pasta do projeto, e em installed_apps
+adicione o nome do aplicativo criado. Ex: 'meuapp'
+
+Agora vamos as views.py do nosso app, podemos pensar nas views como uma página
+que o usuário gostaria de ver.
+
+Em seguida, podemos criar uma urls.py para o app, o projeto django possui
+as urls de todo o projeto, mas muitas vezes precisamos de um arquivo urls
+contendo apenas as urls do app
+
+
+
+
