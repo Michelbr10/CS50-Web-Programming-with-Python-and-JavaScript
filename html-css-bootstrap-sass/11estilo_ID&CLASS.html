@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tituloUm {
+            color: red;
+        }
+        .outrosTitulos{
+            color: blue;
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--As estilizações seguem ordem de precedência quando vários estilos se sobrepõem,
+    ou seja, quem estiver primeiro na escala será aplicado, por exemplo:
+        1.inline - estilização aplicado direto na linha
+        2.id - estilização aplicado através do ID
+        3.class - estilização aplicada através da CLASSE
+        4.type - estilização aplicada através da própria tag-->
+    <h1 id="tituloUm">Cabeçalho 1 estilizado com ID</h1> <!--Para estilizar apenas um elemento
+    damos um id a ele, e fazemos referência na tag style usando #ID, sendo o id
+    qualquer nome que quisermos-->
+
+    <h1 class="outrosTitulos">Cabeçalho 2 estilizado com CLASS</h1> <!--Para estilizar vários elementos,
+    podemos atribuir a eles uma classe, assim podemos aplicar a todos elementos
+    de uma mesma classe as estilizações-->
+    <h1 class="outrosTitulos">Cabeçalho 3 estilizado com CLASS</h1>
+    <h1>Cabeçalho 4 sem estilização</h1>
+</body>
+</html>

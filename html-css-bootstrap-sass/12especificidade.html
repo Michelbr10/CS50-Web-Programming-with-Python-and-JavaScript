@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+        <!--As estilizações seguem ordem de precedência quando vários estilos se sobrepõem,
+    ou seja, quem estiver primeiro na escala será aplicado, por exemplo:
+        1.inline - estilização aplicado direto na linha
+        2.id - estilização aplicado através do ID
+        3.class - estilização aplicada através da CLASSE
+        4.type - estilização aplicada através da própria tag-->
+    <style>
+        div{
+            color: blue;
+        }
+        #hello{
+            color: red;
+        }
+    </style><!--Não importa a ordem que está escrito a estilização, sempre a precedência
+            será seguida-->
+</head>
+<body>
+    <div id="hello">
+        Olá, Mundo!
+    </div>
+</body>
+</html>

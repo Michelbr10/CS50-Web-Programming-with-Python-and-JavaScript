@@ -1,0 +1,50 @@
+justify-content(alinha itens horizontalmente):
+	flex-start: os itens são alinhados ao lado esquerdo do contêiner.
+	flex-end: os itens são alinhados ao lado direito do contêiner.
+	center: os itens são alinhados no centro do contêiner.
+	space-between: Os itens são exibidos com espaçamento igual entre eles.
+	space-around: os itens são exibidos com espaçamento igual ao seu redor.
+Observe que quando a direção flexível é uma coluna, justify-contentmuda para vertical e align-itemspara horizontal.
+
+align-items(alinha itens verticalmente):
+	flex-start: os itens são alinhados à parte superior do contêiner.
+	flex-end: os itens são alinhados à parte inferior do contêiner.
+	center: os itens são alinhados no centro vertical do contêiner.
+	baseline: os itens são exibidos na linha de base do contêiner.
+	stretch: os itens são esticados para caber no contêiner.
+
+flex-direction(define a direção que os itens são colocados dentro do container):
+	row: os itens são colocados na mesma direção do texto.
+	row-reverse: os itens são colocados na direção oposta à do texto.
+	column: Os itens são colocados de cima para baixo.
+	column-reverse: Os itens são colocados de baixo para cima.
+Observe que quando você define a direção para uma linha ou coluna invertida, o início e o fim também são invertidos.
+
+order(Às vezes, reverter a ordem das linhas ou colunas de um contêiner não é suficiente. Nestes casos, podemos aplicar a orderpropriedade a itens individuais. Por padrão, os itens têm o valor 0, mas podemos usar esta propriedade para defini-lo também como um valor inteiro positivo ou negativo (-2, -1, 0, 1, 2)), posição 0 é a posição aonde o
+item está atualmente.
+
+Outra propriedade que você pode aplicar a itens individuais é align-self. Esta propriedade aceita os mesmos valores align-items e seu valor para o item específico.
+	flex-start: os itens são alinhados à parte superior do contêiner.
+	flex-end: os itens são alinhados à parte inferior do contêiner.
+	center: os itens são alinhados no centro vertical do contêiner.
+	baseline: os itens são exibidos na linha de base do contêiner.
+	stretch: os itens são esticados para caber no contêiner.
+
+flex-wrap(distribui os itens):
+	nowrap: Cada item cabe em uma única linha.
+	wrap: os itens são agrupados em linhas adicionais.
+	wrap-reverse: os itens dsão contornados em linhas adicionais ao contrário.
+
+As duas propriedades flex-direction e flex-wrap são usadas juntas com tanta frequência que a propriedade abreviada flex-flowfoi criada para combiná-las. Esta propriedade abreviada aceita o valor das duas propriedades separadas por um espaço.
+
+	flex-flow: row/row-reverse wrap/nowrap/wrap-reverse
+	flex-flow: column/column-reverse wrap/nowrap/wrap-reverse
+
+align-content(para definir como as várias linhas são espaçadas umas das outras)
+	flex-start: As linhas são embaladas na parte superior do contêiner.
+	flex-end: As linhas são embaladas no fundo do contêiner.
+	center: As linhas são embaladas no centro vertical do contêiner.
+	space-between: As linhas são exibidas com espaçamento igual entre elas.
+	space-around: As linhas são exibidas com espaçamento igual ao seu redor.
+	stretch: As linhas são esticadas para caber no contêiner.
+

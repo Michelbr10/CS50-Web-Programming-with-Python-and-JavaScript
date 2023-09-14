@@ -1,0 +1,120 @@
+Resumo:
+    git clone repositorio.git
+    touch nomearquivo.extensão
+    git add nomearquivo.extensão
+    git commit -m "mensagem"
+    git commit -am "mensagem"
+    git status
+    git pull
+    git push
+    git log
+    git reset --hard <commit(hash)>
+    git branch
+    git checkout -b <nomedobranch>
+    git checkout <nomedobranch>
+    git merge <branch que queremos mesclar ao original>
+
+Criar repositorio:
+    1. primero criamos um repositório no github
+
+    2. depois baixamos ele em nosso computador com o comando (git clone)
+    >git clone https://github.com/user/nome-do-repositorio.git
+
+Abrir:
+    3. agora basta abrir a pasta com o nome do projeto
+    >cd nomepasta
+
+Criar arquivo:
+    4. antes de criar nosso arquivo, para poder criar arquivos via terminal
+    é necessário instalar alguns componentes, use o comando:
+    >npm install touch-cli -g
+
+    5. para criar arquivos pelo git, temos que usar o comando (touch),
+    vamos criar o primero arquivo dentro dele.
+    >touch hello.html
+
+Rastrear alteraçoes no arquivo:
+    6. para rastrear alteraçoes de um arquivo, ou seja, dizer ao git o que deve
+    ser salvo/monitorado quando realizar o commit(salvar versão), assim salvando
+    as alteraçoes. Para isso, usamos o comando (git add):
+    >git add hello.html
+
+    esse comando é útil quando estamos trabalhando com vários arquivos, porém 
+    queremos salvar apenas aqueles sinalizados.
+
+Salvar nossas alteraçoes locais:
+    7. para salvar o repositorio, salvando o estado atual do meu repositorio, 
+    acompanhando as alteraçoes nos meus arquivos marcados anteriormente (git add),
+    usamos o comando (git commit):
+    >git commit -m "mensagem"
+
+    a mensagem deve ser as alteraçoes feitas neste último commit, após isso
+    o git irá salvar uma nova versão dos arquivos alterados. Assim você pode
+    acompanhar versões antigas do seu código.
+
+Login:
+    8. antes de salvar um arquivo, é necessário realizar o login no github, use o comando
+    (git config --global user.email "seuemail@email.com") ou (git config --global user.name "username") e depois digite a sua senha:
+    >git config --global user.email "tkobr10@gmail.com" 
+    >>senha
+
+Ver status e salvar no Github:
+    9. para verificar o status das nossas alteraçoes, podemos usar o comando
+    (git status), e ele irá comparar as versão baixada em nosso computador 
+    com a versão salva no repositório.
+    >git status
+
+    10. para salvar efetivamente nossas alteraçoes e enviar-lo ao Github,
+    usamos o comando (git push), assim nossos arquivos serão salvos e exibidos
+    no site do GitHub.
+    >git push
+
+Para rastrear todos arquivos alterados e fazer o commit:
+    10. uma forma mais simples de rastrear e realizar o commit é usar
+    o comando (git commit -am "mensagem"), é equivalente ao (git add + git commit)
+    > git commit -am "Adicionei um título"
+
+    serve para dizer ao git que rastreie todos os arquivos alterados e adicione
+    a mensagem. Sempre que realizarmos os commit é necessário indicar o que é para
+    ser salvo(git add), mas esse comando realiza o commit dos arquivos que foram 
+    alterados de forma rápida.
+
+    após isso, basta usar o (git push) e será salvo no GitHub.
+
+Atualizar o repositório local para a versão mais atual do GitHub:
+    11. para atualizar seu diretório local, para uma versão mais recente que está no
+    GitHub, podemos utilizar o comando (git pull), ele irá pegar a versão atual no 
+    repositório e descompactar no meu repositório local.
+    > git pull
+
+Resolvendo conflitos:
+    12. as vezes mais de uma pessoa pode estar editando o código, e isso irá gerar conflitos
+    para resolver esse problema o git irá exibir um erro ao tentar realizar o (git push),
+    informando que há um conflito e exibindo marcações no código.
+
+    13. você pode usar o comando (git log) para verificar os últimos commits e ver as alteraçoes
+    que foram feitas no código, o comando também irá exibir o comentário adicionado ao commit e o
+    hash do commit.
+    > git log
+
+    14. vocé pode também restaurar uma versão anterior do código usando o comando (git reset --hard <commit>)
+    que irá restaurar uma versão específica que desejar. Ou (git reset --hard origin/master), que reverterá 
+    o repositorio local para versão que no GitHub.
+    > git reset --hard <commit(hash)>
+
+Ramificação:
+    15. as ramificações são úteis quando queremos testar implementações sem que nosso código original seja
+    afetado, assim podemos indicar qual das ramificações queremos trabalhar no momento. A ramificação principal
+    é a (master/main), podemos verificar em qual estamos usando o comando (git branch).
+    > git branch
+
+    16. para criar um novo branch, usamos o comando (git checkout -b nomedobranch), assim será criado um novo branch
+    e você pode trabalhar nele sem que o seu branch master seja afetado. Para mudar entre os branchs, usamos o comando
+    (git checkout nomedobranch)
+    > git checkout -b nomedobranch
+    > git checkout nomedobranch
+
+    17. para mesclar a versão atual e a versão do branch criado, usamos o comando (git merge <branch que queremos mesclar>)
+    > git merge <branch que queremos mesclar ao original>
+
+    o git consegue lidar com a maioria das mesclagens, caso ocorra algum erro será indicado no editor de código.
