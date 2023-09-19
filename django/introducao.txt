@@ -1,4 +1,4 @@
-Criar uma ambiente virtual
+Criar um projeto Django
     django-admin startproject <nome do projeto>
 
 
@@ -7,7 +7,7 @@ dentro dele há alguns arquivos:
 
 manage.py - é usado para executar comandos no projeto django.
 settings.py - contém configurações importantes do nosso aplicativo
-    django, vem carregado com algumas configurações padrão, mas podemos altera-los.
+                django, vem carregado com algumas configurações padrão, mas podemos altera-los.
 urls.py - urls é como um índice das rotas que o aplicativo web pode visitar.
 
 Rodar servidor da aplicação
